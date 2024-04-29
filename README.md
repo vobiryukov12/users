@@ -2,7 +2,7 @@
 
 ### Ссылка на прототип:
 
-[train-characteristics-vobiryukov12.vercel.app](https://users-vobiryukov12.vercel.app/)
+[users-vobiryukov12.vercel.app](https://users-vobiryukov12.vercel.app/)
 
 ```
 node: 20.x
