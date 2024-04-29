@@ -1,0 +1,57 @@
+@import 'modern-normalize/modern-normalize.css';
+
+$width-container: 1620px;
+$gap-container: 20px;
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background: #252627;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: calc($width-container + 2 * $gap-container);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap-container;
+  padding-left: $gap-container;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  padding-top: 20px;
+
+  &__filter {
+    margin-bottom: 20px;
+  }
+
+  &__status {
+    padding-top: 20px;
+  }
+}

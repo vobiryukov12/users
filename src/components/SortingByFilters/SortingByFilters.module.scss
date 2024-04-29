@@ -1,0 +1,142 @@
+.filter {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+
+  &__select {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  &__input-container {
+    position: relative;
+  }
+
+  &__button {
+    cursor: pointer;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 15px 16px;
+
+    font-weight: 700;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    background-color: #545454;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    &::placeholder {
+      color: #545454;
+    }
+
+    &--open {
+      background-color: #7b7b7b;
+    }
+  }
+
+  &__input-container &__icon {
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+
+    transition: transform 0.2s ease;
+
+    &--open {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: 20;
+    top: 50px;
+
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 400px;
+
+    line-height: 20px;
+
+    background-color: #545454;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+
+  &__item {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    padding: 10px 16px;
+
+    transition: background-color 0.2s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        background-color: #7b7b7b;
+      }
+    }
+  }
+
+  &__checkboxField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    background: rgb(255 255 255);
+    border: 2px solid rgb(242 243 245);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px 0 rgb(38 51 77 / 3%);
+  }
+
+  &__checkboxInput {
+    width: 0;
+    height: 0;
+  }
+
+  &__wrapper {
+    margin-bottom: 8px;
+  }
+
+  &__count,
+  &__clearBtn {
+    font-weight: 500;
+  }
+
+  &__count,
+  &__name {
+    color: #878787;
+  }
+
+  &__count {
+    margin-right: 34px;
+  }
+
+  &__clearBtn {
+    cursor: pointer;
+
+    padding: 0;
+
+    color: #fff;
+
+    background: none;
+    border: none;
+  }
+}
